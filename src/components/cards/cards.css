@@ -1,0 +1,66 @@
+.card-one {
+    width: 400px;
+    height: 400px;
+    background-color: #d91656;
+  }
+
+  .card-one:hover {
+    background-color: #640D5F;
+  }
+
+  .card-two{
+    width: 400px;
+    height: 400px;
+    background-color: #EB5B00;
+  }
+
+  .card-twins{
+    width: 400px;
+    height: 190px;    
+    background-color: #FFB200;
+  }
+
+  .card-text-twins{
+    padding: 1rem;
+    font-family: "Comfortaa", serif;
+    color: #060212;
+    font-size: 18px;
+
+  }
+  .card-tag{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: fit-content;
+    margin: 1rem;    
+    background-color: #060212;
+  }
+
+  .card-text-tag{
+    margin: 1rem;
+    font-family: "Comfortaa", serif;
+    color: white;
+    font-size: 12px;
+  }
+
+  .card-info{        
+    background-color: #060212;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .card-text-info{
+    font-family: "Comfortaa", serif;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-text {
+    font-family: "Comfortaa", serif;
+    color: white;
+    font-size: 32px;
+  }
