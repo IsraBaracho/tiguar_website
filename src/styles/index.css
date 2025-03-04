@@ -45,10 +45,16 @@
     align-items: center;
 }
 
+.rowDesktopCards{
+    display: flex;
+    justify-self: center;
+}
+
 .cardsColuna{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .colunaCard{
@@ -62,8 +68,12 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.rowMobileCards{
+    display: none;
 }
 
 @media screen and (max-width: 780px) {
@@ -81,5 +91,12 @@
     
     .cardsColuna{
         flex-direction: column;
+    }
+    .rowDesktopCards{
+        display: none;
+    }
+
+    .rowMobileCards{
+        display: flex;
     }
 }

@@ -11,6 +11,7 @@ import video from '../videos/Luminous_Luxury.mp4';
 import CardOne from "../components/cards/cardOne"
 import CardTwo from "../components/cards/cardTwo"
 import CardTwin from "../components/cards/cardThree"
+import Carousel from "../components/carousel/carousel"
 
 
 const IndexPage = () => {
@@ -33,7 +34,7 @@ const IndexPage = () => {
           </MDBRow>      
     </MDBRow>
 
-    <MDBRow className="d-flex align-items-center" style={{margin: "0", height: "600px"}}>
+    <MDBRow className="rowDesktopCards" style={{margin: "0", height: "500px"}}>
       <MDBCol className="cardsColuna" md={10} offsetMd={1}>
         <MDBCol className="colunaCard">
           <CardOne />
@@ -41,10 +42,14 @@ const IndexPage = () => {
         <MDBCol className="colunaCard">
           <CardTwo />
         </MDBCol>
-        <MDBCol className="colunaTwoCards" style={{height: "400px"}}>
+        <MDBCol className="colunaTwoCards">
         <CardTwin />
         </MDBCol>
       </MDBCol>
+    </MDBRow>
+
+    <MDBRow className="rowMobileCards" style={{margin: "0", height: "500px"}}>
+      <Carousel />
     </MDBRow>
 
     <MDBRow style={{margin: "0", height: "600px", backgroundColor: "#640D5F"}}>
