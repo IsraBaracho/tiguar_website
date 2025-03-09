@@ -30,7 +30,7 @@ export default function App() {
                 dragConstraints={{right: 0, left: - width}}>
 
                     {cards.map((Card, index) =>(
-                        <motion.div className="item" key={index}>
+                        <motion.div className="itemService" key={index}>
                             <Card/>
                         </motion.div>
                     ))}

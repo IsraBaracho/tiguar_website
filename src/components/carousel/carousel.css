@@ -17,6 +17,12 @@
     margin: 14px;
 }
 
+.itemService{
+    min-height: 200px;
+    min-width: 250px;
+    margin: 8px;
+}
+
 .item img{
     width: 100%;
     height: 100%;

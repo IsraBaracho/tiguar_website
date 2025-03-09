@@ -26,3 +26,11 @@
     margin-top: 1rem;
     color: white;
 }
+
+@media screen and (max-width: 780px) {
+    .serviceImage{
+        height: 350px !important;
+        width: 250px !important;
+    }
+    
+}
