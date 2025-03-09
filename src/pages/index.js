@@ -12,7 +12,7 @@ import CardOne from "../components/cards/cardOne"
 import CardTwo from "../components/cards/cardTwo"
 import CardTwin from "../components/cards/cardThree"
 import Carousel from "../components/carousel/carousel"
-
+import CarouselEssencias from "../components/carousel/carouselEssencias"
 
 const IndexPage = () => {
   return (
@@ -53,7 +53,7 @@ const IndexPage = () => {
     </MDBRow>
 
     <MDBRow style={{margin: "0", height: "600px", backgroundColor: "#640D5F"}}>
-
+      <CarouselEssencias />
     </MDBRow>
     </>
   )
