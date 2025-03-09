@@ -13,6 +13,11 @@ import CardTwo from "../components/cards/cardTwo"
 import CardTwin from "../components/cards/cardThree"
 import Carousel from "../components/carousel/carousel"
 import CarouselEssencias from "../components/carousel/carouselEssencias"
+import CardAndroid from "../components/cards/android"
+import CardWebsites from "../components/cards/websites"
+import CardAplicacoes from "../components/cards/aplicacoesWeb"
+import CardConsultoria from "../components/cards/consultoria"
+import CarouselServices from "../components/carousel/carouselServices"
 
 const IndexPage = () => {
   return (
@@ -52,8 +57,29 @@ const IndexPage = () => {
       <Carousel />
     </MDBRow>
 
-    <MDBRow style={{margin: "0", height: "600px", backgroundColor: "#640D5F"}}>
+    <MDBRow style={{margin: "0", backgroundColor: "#640D5F"}}>
       <CarouselEssencias />
+    </MDBRow>
+
+    <MDBRow className="rowDesktopServices" style={{margin: "0", height: "600px", backgroundColor: "#EB5B00"}}>
+    <MDBCol className="cardsColuna" md={10} offsetMd={1}>
+        <MDBCol className="colunaCard">
+          <CardAndroid/>
+        </MDBCol>
+        <MDBCol className="colunaCard">
+          <CardWebsites />
+        </MDBCol>
+        <MDBCol className="colunaCard">
+          <CardAplicacoes />
+        </MDBCol>
+        <MDBCol className="colunaCard">
+          <CardConsultoria />
+        </MDBCol>
+      </MDBCol>      
+    </MDBRow>
+
+    <MDBRow className="rowMobileCards" style={{margin: "0", backgroundColor: "#EB5B00"}}>
+      <CarouselServices />
     </MDBRow>
     </>
   )

@@ -96,6 +96,10 @@
         display: none;
     }
 
+    .rowDesktopServices{
+        display: none;
+    }
+
     .rowMobileCards{
         display: flex;
     }

@@ -6,7 +6,7 @@ import BannerTwo from "../../images/carousel/Banner_Two.svg"
 import BannerThree from "../../images/carousel/Banner_Three.svg"
 export default function App() {
   return (
-    <MDBCarousel showIndicators showControls fade style={{margin: "0"}}>
+    <MDBCarousel showIndicators showControls fade style={{margin: "0", padding: "0"}}>
       <MDBCarouselItem itemId={1}>
         <img src={BannerOne} className='d-block w-100' alt='...' />
         <MDBCarouselCaption>

@@ -1,0 +1,28 @@
+.serviceCard{
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.serviceImage{
+    border-radius: 0;
+    height: 400px;
+    width: auto;
+    filter: brightness(0.5);    
+    transition: filter 0.3s;
+}
+
+.serviceImage:hover{
+    filter: brightness(1);
+}
+
+.txtServiceCard{
+    font-family: "Comfortaa", serif;
+    font-size: 16pt;
+    font-weight: 700;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0;
+    margin-top: 1rem;
+    color: white;
+}
