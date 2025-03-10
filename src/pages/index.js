@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useEffect, useState } from 'react';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 import "@fortawesome/fontawesome-free/css/all.min.css"
 import { MDBRow, MDBCol, MDBBtn } from 'mdb-react-ui-kit';
@@ -13,6 +13,7 @@ import CardTwo from "../components/cards/cardTwo"
 import CardTwin from "../components/cards/cardThree"
 import Carousel from "../components/carousel/carousel"
 import CarouselEssencias from "../components/carousel/carouselEssencias"
+import CarouselEssenciasMobile from "../components/carousel/carouselEssenciasMobile"
 import CardAndroid from "../components/cards/android"
 import CardWebsites from "../components/cards/websites"
 import CardAplicacoes from "../components/cards/aplicacoesWeb"
@@ -20,6 +21,17 @@ import CardConsultoria from "../components/cards/consultoria"
 import CarouselServices from "../components/carousel/carouselServices"
 
 const IndexPage = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+  
+    useEffect(() => {
+      // Executa apenas no cliente
+      if (typeof window !== 'undefined') {
+        setIsMobile(window.innerWidth < 768);
+      }
+    }, []);
+
+
   return (
     <>
     <MDBRow className="firstRow" >
@@ -58,7 +70,7 @@ const IndexPage = () => {
     </MDBRow>
 
     <MDBRow style={{margin: "0", backgroundColor: "#640D5F"}}>
-      <CarouselEssencias />
+      {isMobile ? <CarouselEssenciasMobile />  : <CarouselEssencias />}
     </MDBRow>
 
     <MDBRow className="rowDesktopServices" style={{margin: "0", height: "600px", backgroundColor: "#EB5B00"}}>
