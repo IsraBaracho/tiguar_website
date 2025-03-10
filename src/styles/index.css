@@ -76,6 +76,13 @@
     display: none;
 }
 
+.imageParallax{
+    background-image: url(https://www.feevale.br/s/conteudo/1b024948-194b-42a6-8543-3d2083629816/ParallaxOne.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 @media screen and (max-width: 780px) {
     .content{      
         flex-direction: column-reverse;

@@ -73,6 +73,10 @@ const IndexPage = () => {
       {isMobile ? <CarouselEssenciasMobile />  : <CarouselEssencias />}
     </MDBRow>
 
+      <MDBRow className="imageParallax" style={{margin:"0px", height:"400px"}}>
+          
+      </MDBRow>
+
     <MDBRow className="rowDesktopServices" style={{margin: "0", height: "600px", backgroundColor: "#EB5B00"}}>
     <MDBCol className="cardsColuna" md={10} offsetMd={1}>
         <MDBCol className="colunaCard">
@@ -93,6 +97,8 @@ const IndexPage = () => {
     <MDBRow className="rowMobileCards" style={{margin: "0", backgroundColor: "#EB5B00"}}>
       <CarouselServices />
     </MDBRow>
+
+    
     </>
   )
 }
