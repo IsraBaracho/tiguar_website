@@ -77,10 +77,16 @@
 }
 
 .imageParallax{
-    background-image: url(https://www.feevale.br/s/conteudo/1b024948-194b-42a6-8543-3d2083629816/ParallaxOne.jpg);
+    background-image: url('../images/imagem_tiguar_parallax.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+
+.rowDesktopContact{
+    display: flex;
+    flex-direction: row;
+    
 }
 
 @media screen and (max-width: 780px) {
@@ -109,5 +115,14 @@
 
     .rowMobileCards{
         display: flex;
+    }
+
+    .rowDesktopContact{
+        display: inline;
+        width: 100%;      
+    }
+
+    .pessoaContato{
+        display: none;
     }
 }

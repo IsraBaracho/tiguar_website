@@ -1,0 +1,69 @@
+.subTituloSeccao{
+    color: #640D5F;
+    font-family: "Comfortaa", serif;
+    font-size: 24pt;
+    font-weight: 400;
+}
+
+.inputContato{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.form-control{
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.form-outline .form-control {
+    background-color: white !important;
+    border: none !important;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #640D5F !important;  
+    font-family: "Comfortaa", serif !important;  
+    font-size: 14pt !important;  
+}
+
+.form-outline .form-control:focus {
+    border: none !important;
+    box-shadow: none;
+}
+
+/* Remove a linha de baixo */
+.form-outline .form-control ~ .form-notch div {
+    border: none !important;
+}
+
+/* Estilo para o label */
+.form-outline .form-label {
+    color: #640D5F !important;
+    font-family: "Comfortaa", serif !important;
+    font-size: 10pt !important;
+    font-weight: 400 !important;
+}
+
+.form-outline .form-control:focus ~ .form-label {
+    color: #640D5F !important;  
+}
+
+.form-outline .form-control ~ .form-label {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.botaoEnviarContato{
+    background-color: #640d5f !important;
+    color: white !important;
+    font-family: "Comfortaa", serif !important;
+    font-size: 10pt !important;
+    font-weight: 200 !important;
+    box-shadow: none !important;
+    width: 50%;
+    height: 60px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0;
+}

@@ -1,19 +1,15 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
-import Modal from 'react-modal';
-import { useForm } from "react-hook-form"
-import { MDBInput, MDBTextArea, MDBBtn} from "mdb-react-ui-kit"
-
-
-import "../styles/contato.css"
+import { MDBInput, MDBTextArea, MDBBtn } from "mdb-react-ui-kit"
+import './formulario.css';
 
 const FormularioContato = () => {  
   const form = useRef();
   const recaptchaRef = useRef(null);
   const [token, setToken] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
-  const [buttonText, setButtonText] = useState('ENVIAR');
+  const [buttonText, setButtonText] = useState('ENVIAR E-MAIL');
   const [buttonColor, setButtonColor] = useState('null');
   const [buttonBackgroundColor, setButtonBackgroundColor] = useState('#2A5F9E');
 
@@ -65,11 +61,11 @@ const FormularioContato = () => {
         
         <div>
                 <div>
-                <h2 style={{width:"100%"}} className="subTituloSeccao">ENVIE SUA MENSAGEM</h2>
+                <h2 style={{width:"100%"}} className="subTituloSeccao">Entre em contato</h2>
                 </div>
                 <form ref={form} onSubmit={handleSubmit}>
                 <div className='inputContato'>
-                    <MDBInput 
+                    <MDBInput                    
                     label='Nome'
                     name='Nome'
                     type='text' />
@@ -108,7 +104,7 @@ const FormularioContato = () => {
                 
                 
                 <div className="d-flex-column justify-content-center" style={{paddingBottom: "1rem"}}>
-                  <React.Fragment className="d-flex justify-content-center">
+                  {/*<React.Fragment className="d-flex justify-content-center">
                   <ReCAPTCHA
                   className='d-flex justify-content-center' style={{margin: "1rem"}}
                   ref={recaptchaRef}
@@ -116,7 +112,7 @@ const FormularioContato = () => {
                   onChange={handleTokenChange}
                 />
                 
-                  </React.Fragment>
+                  </React.Fragment>*/}
                   
                 <React.Fragment>
                 
@@ -124,7 +120,7 @@ const FormularioContato = () => {
                 </React.Fragment>
                 </div>
                 </form>
-                </div>
+        </div>
     )    
 }
 

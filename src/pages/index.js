@@ -19,6 +19,8 @@ import CardWebsites from "../components/cards/websites"
 import CardAplicacoes from "../components/cards/aplicacoesWeb"
 import CardConsultoria from "../components/cards/consultoria"
 import CarouselServices from "../components/carousel/carouselServices"
+import FormularioContato from "../components/formulario/formulario"
+import People from "../images/pessoa_contato.svg"
 
 const IndexPage = () => {
 
@@ -65,6 +67,8 @@ const IndexPage = () => {
       </MDBCol>
     </MDBRow>
 
+    
+
     <MDBRow className="rowMobileCards" style={{margin: "0", height: "500px"}}>
       <Carousel />
     </MDBRow>
@@ -72,10 +76,7 @@ const IndexPage = () => {
     <MDBRow style={{margin: "0", backgroundColor: "#640D5F"}}>
       {isMobile ? <CarouselEssenciasMobile />  : <CarouselEssencias />}
     </MDBRow>
-
-      <MDBRow className="imageParallax" style={{margin:"0px", height:"400px"}}>
-          
-      </MDBRow>
+      
 
     <MDBRow className="rowDesktopServices" style={{margin: "0", height: "600px", backgroundColor: "#EB5B00"}}>
     <MDBCol className="cardsColuna" md={10} offsetMd={1}>
@@ -97,6 +98,21 @@ const IndexPage = () => {
     <MDBRow className="rowMobileCards" style={{margin: "0", backgroundColor: "#EB5B00"}}>
       <CarouselServices />
     </MDBRow>
+
+    <MDBRow className="imageParallax" style={{margin:"0px", height:"400px"}}>
+          
+      </MDBRow>
+
+      <MDBRow  style={{margin: "0", backgroundColor: "#FFB200", paddingTop: "3rem"}}>
+        <MDBCol className="rowDesktopContact" sm={12} md={10} offsetMd={1}>
+          <MDBCol md={5}>
+            <FormularioContato />
+          </MDBCol>
+          <MDBCol className='pessoaContato' md={6} offsetMd={1}>
+            <img src={People} style={{width: "90%"}} alt="" />
+          </MDBCol>
+        </MDBCol>
+      </MDBRow>
 
     
     </>
