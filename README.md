@@ -4,46 +4,27 @@
   </a>
 </p>
 <h1 align="center">
-  Tiguar Website
+  🌎 Tiguar Website
 </h1>
 
-## 🚀 Quick start
+📋 About the Project
+Tiguar Website is a site built using Gatsby, React, JavaScript, and Bootstrap, designed to provide an optimized, responsive, and high-performance experience. The goal is to create an intuitive and accessible environment, ensuring smooth navigation for all users.
 
-1.  **Create a Gatsby site.**
+🚀 Features
+Optimized Performance: Fast and efficient website using Gatsby’s static site generation.
+Responsive Design: Mobile-first approach for accessibility across different devices.
+Interactivity: Dynamic interface powered by React.
+Modern Styling: Layout built with Bootstrap for a clean and flexible design.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+🛠️ Technologies Used
+Framework: Gatsby (React)
+Language: JavaScript
+Styling: Bootstrap
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+🚀 Steps to Run
+1️⃣ Clone this repository
+2️⃣ Install dependencies
+3️⃣ Start the development server
+4️⃣ Open in your browser
 
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+Your site will be available at 👉 http://localhost:8000/
