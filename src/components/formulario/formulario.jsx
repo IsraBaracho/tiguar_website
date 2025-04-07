@@ -22,8 +22,8 @@ const FormularioContato = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_ui9ez2l', 'template_0qlmq0n', form.current, {
-        publicKey: 'P15LPADD_dAjd7JT6',
+      .sendForm('', '', form.current, {
+        publicKey: '',
       })
       .then(
         () => {
